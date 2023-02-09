@@ -1,1 +1,2 @@
+#!/bin/bash
 ls -A --format=commas | sort -t, -k1.1,1 | tr '\n' ',' | sed 's/,/,\n/g;s/,$//'
